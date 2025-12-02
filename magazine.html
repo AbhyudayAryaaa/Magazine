@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Online Magazine</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+        }
+
+        /* HEADER */
+        header {
+            background: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        /* MAIN CONTAINER */
+        .container {
+            padding: 20px;
+        }
+
+        /* FEATURED SECTION */
+        .featured {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .featured img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* TOPICS GRID */
+        .topics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* SUBSCRIBE BOX */
+        .subscribe {
+            margin-top: 40px;
+            background: #222;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        input {
+            padding: 10px;
+            width: 250px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-left: 10px;
+            border: none;
+            background: #ffcc00;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #ffdd44;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #222;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>DailyBuzz Magazine</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#topics">Topics</a>
+            <a href="#featured">Featured</a>
+            <a href="#subscribe">Subscribe</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <!-- FEATURED ARTICLE -->
+        <section id="featured" class="featured">
+            <h2>Featured Article</h2>
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="">
+            <p><strong>Discover how technology is transforming our everyday lives.</strong></p>
+            <p>From AI assistants to smart homes, the digital world is growing faster than ever. Read more to discover how these changes affect you.</p>
+        </section>
+
+        <!-- TOPICS SECTION -->
+        <section id="topics">
+            <h2>Popular Topics</h2>
+
+            <div class="topics">
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="">
+                    <h3>Technology</h3>
+                    <p>Latest gadgets, AI trends, and tech news.</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="">
+                    <h3>Lifestyle</h3>
+                    <p>Fashion, food, travel, wellness & more.</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4" alt="">
+                    <h3>Business</h3>
+                    <p>Market updates, finance tips & entrepreneurship.</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="">
+                    <h3>World News</h3>
+                    <p>Global events, politics & international stories.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SUBSCRIBE BOX -->
+        <section id="subscribe" class="subscribe">
+            <h2>Subscribe to Our Magazine</h2>
+            <p>Get daily updates delivered to your inbox.</p>
+            <input type="email" placeholder="Enter your email">
+            <button>Subscribe</button>
+        </section>
+
+    </div>
+</body>
+</html>
